@@ -93,3 +93,57 @@ Migrating to RemoveNameFromLists (20200819120429)
   ↳ bin/rails:9
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/todolists/new" for 10.0.2.2 at 2020-08-21 07:09:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 1022ms (Views: 969.4ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-08-21 07:09:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFzHgPEnwQjzmIg8T3u2oSib9LpNOzmKQjGmWiATpjGOJeNQNLqbRACAuOr857UG4mT6n2DCoHAvDpeQh5SrmQ==", "list"=>{"title"=>"aaa", "body"=>""}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[36mList Create (3.6ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaa"], ["body", ""], ["created_at", "2020-08-21 07:09:34.652971"], ["updated_at", "2020-08-21 07:09:34.652971"]]
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+Redirected to http://localhost:3000/top
+Completed 302 Found in 15ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2020-08-21 07:09:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 89ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2020-08-21 07:09:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFzHgPEnwQjzmIg8T3u2oSib9LpNOzmKQjGmWiATpjGOJeNQNLqbRACAuOr857UG4mT6n2DCoHAvDpeQh5SrmQ==", "list"=>{"title"=>"aaaa", "body"=>"wa-i"}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[36mList Create (3.4ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaaa"], ["body", "wa-i"], ["created_at", "2020-08-21 07:09:51.192309"], ["updated_at", "2020-08-21 07:09:51.192309"]]
+  ↳ app/controllers/todolists_controller.rb:8
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:8
+Redirected to http://localhost:3000/top
+Completed 302 Found in 15ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2020-08-21 07:09:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
