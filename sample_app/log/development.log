@@ -483,3 +483,65 @@ Processing by TodolistsController#show as HTML
 Completed 200 OK in 69ms (Views: 56.0ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/todolists/1" for 10.0.2.2 at 2020-08-22 05:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 553ms (Views: 521.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/todolists/1" for 10.0.2.2 at 2020-08-22 05:25:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (2.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 161ms (Views: 148.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/todolists/1/edit" for 10.0.2.2 at 2020-08-22 05:26:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (3.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:21
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 148ms (Views: 111.6ms | ActiveRecord: 3.1ms)
+
+
+Started PATCH "/todolists/1" for 10.0.2.2 at 2020-08-22 05:26:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R3KsrY3kdAFWYdqFTqpAzRJjg0qb0lR60zjhtPYisscIPj94tl2+ZvXYBb1HNv09IV6rKmXg0rJweuvOznTMIA==", "list"=>{"title"=>"aaa", "body"=>"dango"}, "commit"=>"保存", "id"=>"1"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:26
+  [1m[36mList Update (3.7ms)[0m  [1m[33mUPDATE "lists" SET "body" = ?, "updated_at" = ? WHERE "lists"."id" = ?[0m  [["body", "dango"], ["updated_at", "2020-08-22 05:26:08.499480"], ["id", 1]]
+  ↳ app/controllers/todolists_controller.rb:26
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:26
+Redirected to http://localhost:3000/todolists/1
+Completed 302 Found in 23ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/todolists/1" for 10.0.2.2 at 2020-08-22 05:26:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 133ms (Views: 123.4ms | ActiveRecord: 1.1ms)
+
+
