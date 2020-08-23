@@ -1164,3 +1164,89 @@ Processing by TodolistsController#index as HTML
 Completed 200 OK in 74ms (Views: 65.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/todolists" for 10.0.2.2 at 2020-08-23 05:08:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:1
+  Rendered todolists/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 598ms (Views: 553.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/attachments/f06c9a8758c21517257bf035fac006585239d7e5/store/fill/200/200/163ef8737aa9f5e456a8f6edd13a6af23b47da6761dc6099d6a792c80d80/image.jpeg" for 10.0.2.2 at 2020-08-23 05:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/4d3bb5acb99b9ab446104567c141252ed277c3aa/store/fill/200/200/6cda756c8978903e990b3c326a6bba28b4f733b93e6050cc1f4acc5df006/image.jpeg" for 10.0.2.2 at 2020-08-23 05:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/a8e5e4f138836d396007d6e84b85fffe1bc9a50e/store/fill/200/200/1d56ce60837857b5dd8d0a6f54d73e799b3f08ce286ff891fcd7e4a89b93/image.jpeg" for 10.0.2.2 at 2020-08-23 05:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/3496ae81f9812f778998d731882920f5034b44b7/store/fill/200/200/ee20335cabbf13f02fdbfb0dccde72f8453399fdd32fb3e2d4dc5e334b80/image.jpeg" for 10.0.2.2 at 2020-08-23 05:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/46fd18d1515ae5112933f7e3948692ff11a44436/store/fill/200/200/0c77f632f5e6ba1ed2a0d87d45a763fe7c9103762beff75ff5e9527d3e39/image.jpeg" for 10.0.2.2 at 2020-08-23 05:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-08-23 05:08:50 +0000] GET "/4d3bb5acb99b9ab446104567c141252ed277c3aa/store/fill/200/200/6cda756c8978903e990b3c326a6bba28b4f733b93e6050cc1f4acc5df006/image.jpeg" 200 1778.2ms
+
+Refile::App: [2020-08-23 05:08:51 +0000] GET "/f06c9a8758c21517257bf035fac006585239d7e5/store/fill/200/200/163ef8737aa9f5e456a8f6edd13a6af23b47da6761dc6099d6a792c80d80/image.jpeg" 200 1907.0ms
+
+Refile::App: [2020-08-23 05:08:51 +0000] GET "/46fd18d1515ae5112933f7e3948692ff11a44436/store/fill/200/200/0c77f632f5e6ba1ed2a0d87d45a763fe7c9103762beff75ff5e9527d3e39/image.jpeg" 200 1848.2ms
+
+Refile::App: [2020-08-23 05:08:51 +0000] GET "/a8e5e4f138836d396007d6e84b85fffe1bc9a50e/store/fill/200/200/1d56ce60837857b5dd8d0a6f54d73e799b3f08ce286ff891fcd7e4a89b93/image.jpeg" 200 1944.5ms
+
+Refile::App: [2020-08-23 05:08:51 +0000] GET "/3496ae81f9812f778998d731882920f5034b44b7/store/fill/200/200/ee20335cabbf13f02fdbfb0dccde72f8453399fdd32fb3e2d4dc5e334b80/image.jpeg" 200 1926.9ms
+
+Started GET "/todolists" for 10.0.2.2 at 2020-08-23 05:09:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:1
+  Rendered todolists/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 135ms (Views: 116.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-08-23 05:09:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 148ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2020-08-23 05:09:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 145ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2020-08-23 05:09:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:1
+  Rendered todolists/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 242ms (Views: 183.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2020-08-23 05:09:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 145ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2020-08-23 05:09:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (7.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:1
+  Rendered todolists/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 215ms (Views: 200.1ms | ActiveRecord: 7.1ms)
+
+
