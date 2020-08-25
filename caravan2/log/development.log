@@ -25,3 +25,256 @@ Migrating to CreateBlogs (20200825070800)
   ↳ bin/rails:9
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 09:43:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1442.2ms)
+Completed 200 OK in 1587ms (Views: 1574.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-25 12:30:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/caravan2/app/controllers/blogs_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/blogs_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-25 12:31:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (201.4ms)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `submit_tag' for #<ActionView::Helpers::FormBuilder:0x00000000057f4f90>
+Did you mean?  submit):
+     8: <h4>本文</h4>
+     9: <%= f.text_area :body %>
+    10: 
+    11: <%= f.submit_tag '投稿' %>
+    12: 
+    13: <% end %>
+  
+app/views/blogs/new.html.erb:11:in `block in _app_views_blogs_new_html_erb__795642852422718880_46142320'
+app/views/blogs/new.html.erb:3:in `_app_views_blogs_new_html_erb__795642852422718880_46142320'
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-25 12:32:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 647ms (Views: 637.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 13:03:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    36:   <section class="blog">
+    37:     <h2 class="blog-headline">Recent Blogs</h2>
+    38:     <div class="blog-box">
+    39:       <% @blogs.each do |blog| %>
+    40:         <div class="blog-item clearfix">
+    41:           <div class="blog-image"><%= image_tag('img/forest.jpg', class:'blog-image') %></div>
+    42:           <section class="blog-text">
+  
+app/views/blogs/index.html.erb:39:in `_app_views_blogs_index_html_erb___4044205753543641130_69955231725220'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 13:07:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    36:   <section class="blog">
+    37:     <h2 class="blog-headline">Recent Blogs</h2>
+    38:     <div class="blog-box">
+    39:       <% @blogs.each do |blog| %>
+    40:         <div class="blog-item clearfix">
+    41:           <div class="blog-image"><%= image_tag('img/forest.jpg', class:'blog-image') %></div>
+    42:           <section class="blog-text">
+  
+app/views/blogs/index.html.erb:39:in `_app_views_blogs_index_html_erb___4044205753543641130_69955320078840'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 13:08:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    36:   <section class="blog">
+    37:     <h2 class="blog-headline">Recent Blogs</h2>
+    38:     <div class="blog-box">
+    39:       <% @blogs.each do |blog| %>
+    40:         <div class="blog-item clearfix">
+    41:           <div class="blog-image"><%= image_tag('img/forest.jpg', class:'blog-image') %></div>
+    42:           <section class="blog-text">
+  
+app/views/blogs/index.html.erb:39:in `_app_views_blogs_index_html_erb___4044205753543641130_69955321051200'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:41:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    36:   <section class="blog">
+    37:     <h2 class="blog-headline">Recent Blogs</h2>
+    38:     <div class="blog-box">
+    39:       <% @blogs.each do |blog| %>
+    40:         <div class="blog-item clearfix">
+    41:           <div class="blog-image"><%= image_tag('img/forest.jpg', class:'blog-image') %></div>
+    42:           <section class="blog-text">
+  
+app/views/blogs/index.html.erb:39:in `_app_views_blogs_index_html_erb___4044205753543641130_69955237153620'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:43:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    36:   <section class="blog">
+    37:     <h2 class="blog-headline">Recent Blogs</h2>
+    38:     <div class="blog-box">
+    39:       <% @blogs.each do |blog| %>
+    40:         <div class="blog-item clearfix">
+    41:           <div class="blog-image"><%= image_tag('img/forest.jpg', class:'blog-image') %></div>
+    42:           <section class="blog-text">
+  
+app/views/blogs/index.html.erb:39:in `_app_views_blogs_index_html_erb___4044205753543641130_69955321935840'
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:44:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:39
+  Rendered blogs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 1091ms (Views: 1063.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:46:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:39
+  Rendered blogs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 225ms (Views: 196.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:46:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:39
+  Rendered blogs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 230ms (Views: 211.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:46:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:39
+  Rendered blogs/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 164ms (Views: 152.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs/new_blog" for 10.0.2.2 at 2020-08-25 14:49:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"new_blog"}
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1489ms (Views: 1455.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/blogs" for 10.0.2.2 at 2020-08-25 14:49:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"blogs"}
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 114ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/blogs" for 10.0.2.2 at 2020-08-25 14:49:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"blogs"}
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 10.0.2.2 at 2020-08-25 14:50:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 158ms (Views: 83.4ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/blogs" for 10.0.2.2 at 2020-08-25 14:50:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y4lDV6OmpMWV2IJzSBsPb0EEm6sI6ur56zm5ODNdQzjTCK0CyL+9q9rvircnLJIlF7LWyKA518S0tCztd2MIlA==", "blog"=>{"title"=>"aaa", "body"=>"dango"}, "commit"=>"投稿"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/blogs_controller.rb:15
+  [1m[36mBlog Create (4.8ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaa"], ["body", "dango"], ["created_at", "2020-08-25 14:50:18.322912"], ["updated_at", "2020-08-25 14:50:18.322912"]]
+  ↳ app/controllers/blogs_controller.rb:15
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/blogs_controller.rb:15
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 28ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/blogs" for 10.0.2.2 at 2020-08-25 14:50:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:39
+  Rendered blogs/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 201ms (Views: 190.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/1" for 10.0.2.2 at 2020-08-25 14:50:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 158ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
